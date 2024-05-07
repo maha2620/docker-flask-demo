@@ -17,8 +17,8 @@ pipeline {
         }
         stage('push image') {
             steps{
-                sh 'docker tag ylmt/flaskapp:$BUILD_NUMBER maha2620/sample:ylmt/flaskapp'
-                sh 'docker push maha2620/sample:ylmt/flaskapp'
+                sh 'docker tag ylmt/flaskapp:$BUILD_NUMBER maha2620/sample:flaskapp'
+                sh 'docker push maha2620/sample:flaskapp'
             }
         }
 }
